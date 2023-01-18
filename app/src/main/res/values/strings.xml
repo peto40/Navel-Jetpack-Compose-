@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Navel</string>
+    <string name="app_desc">Nature Travel</string>
+    <string name="first_scr">Explore the beauty of the world!</string>
+    <string name="second_scr">Enjoy your travel experience</string>
+    <string name="third_scr">Let\'s make your dream travel!</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="face_ID">Face ID</string>
+    <string name="login_with">Or Login With</string>
+    <string name="register_with">Or Register With</string>
+    <string name="register_here">Register Here</string>
+    <string name="full_name">Full Name</string>
+    <string name="register">Register</string>
+    <string name="bali_indonesia">Bali, Indonesia</string>
+    <string name="acc_setup">Account Setup</string>
+    <string name="description">Finish your account setup by uploading profile picture and set your username.</string>
+    <string name="userName">UserName</string>
+    <string name="create_account">Create Account</string>
+    <string name="reg_complete">Register Complete!</string>
+    <string name="succes_desc">You have succesfuly created your account!</string>
+    <string name="explore_home">Explore Home</string>
+    <string name="title_activity_home_screens">HomeScreensActivity</string>
+    <string name="zion_national_park">Zion National Park</string>
+    <string name="komodo_icland">Komodo Icland</string>
+    <string name="borobudur_temple">Borobudur Temple</string>
+</resources>

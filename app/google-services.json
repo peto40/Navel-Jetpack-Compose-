@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "262108288507",
+    "project_id": "navel-7b88a",
+    "storage_bucket": "navel-7b88a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262108288507:android:49f75d090cfd586235675e",
+        "android_client_info": {
+          "package_name": "com.hfad.android.navel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262108288507-tuj7aupm7sjut72ifigovf1nm7rtc7sm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD15cpyYDGGVW_MaBPsAk99QgkN67bpNBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262108288507-tuj7aupm7sjut72ifigovf1nm7rtc7sm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
