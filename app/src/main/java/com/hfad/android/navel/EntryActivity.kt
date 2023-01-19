@@ -26,21 +26,8 @@ class EntryActivity : ComponentActivity() {
                     val navController = rememberNavController()
                     NavigationAppHost(navController = navController)
 
-
                 }
-
             }
         }
-    }
-
-}
-
-
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    NavelTheme {
-    //MainScreenView()
     }
 }

@@ -14,9 +14,8 @@ fun main() = runBlocking<Unit> {
     val list = listOf(1, 2, 4, 5, 6, 8, 2, 4, 5, 6, 8, 2, 4, 5, 6, 8, 2, 4, 5, 6, 8, 2, 4, 5, 6, 8, 2, 4, 5, 6, 8, 2, 4, 5, 6, 8).asSequence()
     println(measureTimeMillis { list.filter { it% 2 == 0 }.map { it * it }.toList()} )
 
-    postponeComputation(1000) {
-        println("")
-    }
+    surname = ""
+
 
 
     val type = with(people){
@@ -25,9 +24,12 @@ fun main() = runBlocking<Unit> {
         this.lastIndex
         this[0].name
     }
+    println(Person("",4) == Person("",5))
 
 }
-
+fun interface S{
+    fun s()
+}
 fun postponeComputation(delay: Int , computation: Runnable){}
 class HandleComputation(val id: String) : Runnable {
     override fun run() {
@@ -50,7 +52,7 @@ suspend fun loadData() {
     println("data")
 }
 
-
+private lateinit var surname: String
 class Sum(val a: Int, val b: Int) {
 
     companion object {
@@ -68,7 +70,19 @@ class Sum(val a: Int, val b: Int) {
 }
 
 
-class Person(val name: String, val age: Int)
+class Person(val name: String, val age: Int) {
+
+    override fun equals(other: Any?): Boolean {
+        val another = other as? Person ?: return false
+        return another.name == name && another.age == age
+    }
+
+    override fun hashCode(): Int {
+        var result = name.hashCode()
+        result = 31 * result + age
+        return result
+    }
+}
 
 
 
