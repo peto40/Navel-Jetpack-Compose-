@@ -1,5 +1,6 @@
 package com.hfad.android.navel.ui.screens.home
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -15,16 +16,15 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.hfad.android.navel.ui.screens.components.DisplayDestinationCard
-import com.hfad.android.navel.ui.screens.components.HorizontalLine
 import com.hfad.android.navel.ui.theme.AppTheme
-import com.hfad.android.navel.ui.viewmodel.NavelViewModel
+import com.hfad.android.navel.ui.viewmodel.BookmarkViewModel
 
 @Composable
 fun BookmarkScreen(
-    navelViewModel: NavelViewModel,
+    viewModel: BookmarkViewModel,
     modifier: Modifier = Modifier,
 ) {
-    val state = navelViewModel.uiState.observeAsState(initial = listOf())
+    val state = viewModel.uiState.observeAsState(initial = listOf())
     //val destCardState by remember { mutableStateOf(state) }
 
 
@@ -71,8 +71,8 @@ fun BookmarkScreen(
                     itemsIndexed(state.value) { _, dest ->
                         if (dest.addedToBookmark){
                             DisplayDestinationCard(
-                                currentCardModel = dest,
-                                navelViewModel = navelViewModel
+                                destCardModel = dest,
+
                             )
                         }
 
@@ -106,4 +106,14 @@ fun BookmarkIsEmpty(modifier: Modifier = Modifier) {
             fontSize = 12.sp
         )
     }
+}
+
+@Composable
+fun HorizontalLine() {
+    Row(
+        modifier = Modifier
+            .height(1.dp)
+            .fillMaxWidth()
+            .background(AppTheme.colors.hintTextColor)
+    ) {}
 }

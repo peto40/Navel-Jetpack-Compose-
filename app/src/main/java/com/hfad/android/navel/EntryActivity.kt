@@ -7,11 +7,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Surface
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
-import com.hfad.android.navel.navigation.NavigationAppHost
+import com.hfad.android.navel.ui.navigation.NavigationAppHost
 import com.hfad.android.navel.ui.theme.NavelTheme
 
 class EntryActivity : ComponentActivity() {
